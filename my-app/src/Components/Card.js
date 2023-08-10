@@ -1,5 +1,5 @@
 import React from 'react'
-import fotoProducto from '../../fotoProducto'
+import fotoProducto from '../Fotos/fotoPrueba.jfif'
 
 function Card(card,detalle) {
     const ListaProductos = [
@@ -26,10 +26,10 @@ function Card(card,detalle) {
   return (
     <div class="col mb-5">
                         <div class="cardIndividual">  
-                            <img class="card-img-top" src= {card.foto} alt="..."/>     
+                            <img class="card-img-top" src= {fotoProducto} alt="..."/>     
                             <div class="card-body p-4">
                                 <div class="text-center">    
-                                    <h5 class="fw-bolder"><span>{card.nombre}</span></h5>
+                                    <h5 class="fw-bolder"><span>Computadora</span></h5>
                                     
                                 </div>
                             </div>

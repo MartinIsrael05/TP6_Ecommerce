@@ -1,14 +1,14 @@
-import React from 'react'
-import { Link } from "react-router-dom";
-function Layout() {
-  return (
-    <nav>
-<Link to="/home">Home</Link>
-<Link to="/quienes-somos">Quienes Somos</Link>
-<Link to="/contacto">Contacto</Link>
-</nav>
+import { Outlet } from "react-router-dom";
+import NavBar from "../Components/NavBar";
+import Card from "../Components/Card";
+import Header from "../Components/Header";
+const Layout = () => {
+ return (
+   <>
+    <NavBar/>
+    <Outlet/>
+   </>
+ );
+};
 
-  )
-}
-
-export default Layout
+export default Layout;

@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import css from './App.css';
 import NavBar from "./Components/NavBar.js"
 import Header from './Components/Header';
 import Card from './Components/Card';
@@ -36,10 +36,11 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}></Route>
-     <Route path="/home" element={<Home />}></Route>
-     <Route path="/quienes-somos" element={<Nosotros/>}></Route>
-   <Route path="/contacto" element={<Contacto />}></Route>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />}></Route>
+          <Route path="/quienes-somos" element={<Nosotros/>}></Route>
+        <Route path="/contacto" element={<Contacto />}></Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   </>
